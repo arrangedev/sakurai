@@ -1,14 +1,12 @@
 ```
 
-                                 ███████╗ █████╗ ██╗  ██╗██╗   ██╗██████╗  █████╗ ██╗
-                                 ██╔════╝██╔══██╗██║ ██╔╝██║   ██║██╔══██╗██╔══██╗██║
-                                 ███████╗███████║█████╔╝ ██║   ██║██████╔╝███████║██║
-                                 ╚════██║██╔══██║██╔═██╗ ██║   ██║██╔══██╗██╔══██║██║
-                                 ███████║██║  ██║██║  ██╗╚██████╔╝██║  ██║██║  ██║██║
-                                 ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝
-                                
-                                
-                                        HIGH PERFORMANCE RUST DATA STRUCTURES
+███████╗ █████╗ ██╗  ██╗██╗   ██╗██████╗  █████╗ ██╗
+██╔════╝██╔══██╗██║ ██╔╝██║   ██║██╔══██╗██╔══██╗██║
+███████╗███████║█████╔╝ ██║   ██║██████╔╝███████║██║
+╚════██║██╔══██║██╔═██╗ ██║   ██║██╔══██╗██╔══██║██║
+███████║██║  ██║██║  ██╗╚██████╔╝██║  ██║██║  ██║██║
+╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝
+
 ```
 
 ## Usage
@@ -28,7 +26,7 @@ Run the test suite:
 cargo test
 ```
 
-Additional testing with miri (check for UB):
+Run UB checks:
 
 ```bash
 cargo +nightly miri test
@@ -36,4 +34,4 @@ cargo +nightly miri test
 
 ## Safety
 
-Sakurai uses `unsafe` code internally for performance, but provides safe APIs. This isn't for the weak -- use at your own risk.
+Sakurai uses a fair bit of unsafe code internally, but the outward APIs are safe Rust. While the crate is well tested; use at your own risk.
