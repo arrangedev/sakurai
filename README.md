@@ -32,6 +32,8 @@ Run UB checks:
 cargo +nightly miri test
 ```
 
-## Safety
+## Safety & Disclaimers
 
-Sakurai uses a fair bit of unsafe code internally, but the outward APIs are safe Rust. While the crate is well tested; use at your own risk.
+Sakurai uses a fair bit of unsafe code internally, but the outward APIs are safe Rust. 
+
+While this crate is well tested, it's not recommended for production currently as some APIs are unstable (notably BTree). Use at your own risk.
